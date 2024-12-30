@@ -104,12 +104,23 @@
 }
 
 .carousel-item {
-  max-height: 180px;
+  max-height: 250px;
 }
 
-.card-size {
-  max-height: 180px;
 
+.container-contact {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  text-align: center;
+}
+
+.container-contact h2 {
+  padding-bottom: 1rem;
+}
+
+.container-contact a {
+  text-decoration: none;
+  color: black;
 }
 
 footer {
@@ -117,7 +128,6 @@ footer {
   background-color: #f59791;
   text-align: center;
   color: white;
-
 }
 
 footer p {
