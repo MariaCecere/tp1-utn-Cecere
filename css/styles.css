@@ -4,6 +4,13 @@
   font-family: "Poppins";
 }
 
+.navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 9;
+
+}
+
 .img-logo {
   width: 48px;
   height: 48px;
@@ -11,14 +18,152 @@
 }
 
 .biografia {
-  height: 100vh;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-between;
+  background-image: url('../assets/background.png');
+  width: 100%;
+  height: 100vh;
+}
+
+.texto-bio {
+  margin-top: 7rem;
+  align-items: top;
+  background-color: aliceblue;
+  height: auto;
+  padding: 3rem;
+  border-radius: 32px;
+}
+
+.biografia p {
+  font-weight: 300;
+  font-size: 12pt;
+  text-indent: .5rem;
+  line-height: 1.5;
+  max-width: 600px;
+}
+
+
+.container {
+
+  margin-left: 100px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+
+
+}
+
+.img-bio {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  margin-left: auto;
+
+  margin-top: 7rem;
+
+
+}
+
+.img-bio1 {
+  width: 500px;
+  height: auto;
+}
+
+.container-proyectos {
+  padding-left: 100px;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  background-color: #fff2cc;
+
 }
 
 .cont-proyectos {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 16px;
+
+
+}
+
+.container-design {
+  padding-left: 100px;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  background-color: #f7edf1;
+
+}
+
+.btn-primary {
+  color: white;
+  background-color: #f59791;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #fac6c2;
+}
+
+.carousel-item {
+  max-height: 180px;
+}
+
+.card-size {
+  max-height: 180px;
+
+}
+
+footer {
+  padding: 20px;
+  background-color: #f59791;
+  text-align: center;
+  color: white;
+
+}
+
+footer p {
+  font-size: 10pt;
+}
+
+
+@media (max-width: 1000px) {
+  .biografia {
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    height: auto;
+  }
+
+  .container {
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+  }
+
+  .img-bio {
+    margin-top: 2rem;
+    margin-left: auto;
+
+    width: 100%;
+  }
+
+  .img-bio img {
+    max-width: 100%;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+
+  .img-bio1 {
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+
+  .texto-bio h2,
+  h5 {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+
+  }
 }
